@@ -1,3 +1,14 @@
+<?php 
+session_start();
+if(!isset($_SESSION['count'])) {
+    $_SESSION['count'] = 0;
+    $counter = 0;
+    echo 'reset';
+} else {
+    $count++;
+    $_SESSION['count']++;
+} ?>
+
 <!DOCTYPE html>
 <html>
     <head>
