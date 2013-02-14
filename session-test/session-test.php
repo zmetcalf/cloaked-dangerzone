@@ -8,7 +8,6 @@ if(!isset($_SESSION['count'])) {
     $count++;
     $_SESSION['count']++;
 } ?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,7 +18,6 @@ if(!isset($_SESSION['count'])) {
         <?php echo $_POST["zipcode"]?><h1> Zip Code </h2>
         <?php echo "Hello Spot"; ?>
         <?php echo "The session count is " . $_SESSION['count']; ?>
-        <a href='/index.php'>Go back to index.</a>
-        
+        <a href='../index.php'>Go back to index.</a>  
     </body>
 </html>
