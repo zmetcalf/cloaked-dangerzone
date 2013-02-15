@@ -24,7 +24,9 @@ if(!isset($_SESSION['count'])) {
             <input type="submit" value="Post-Submit Button" ><br />
             <a href="session-test/session-test.php">Session Test</a><br />
             <a href="XSLT/XPATH.html">XPath Test</a><br />
-            <a href="XSLT/cdcatalog.xml">XSLT Test CD Catalog</a>
+            <a href="XSLT/cdcatalog.xml">XSLT Test CD Catalog</a><br />
+            <a href="XSLT/xlst-display.html">JavaScript XSLT Display</a><br />
+            
             <?php echo "The session count is " . $_SESSION['count']; ?>
         </form>
     </body>
