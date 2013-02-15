@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<?xml-stylesheet type="text/xsl" href="for-each.xsl"?>
+<?xml-stylesheet type="text/xsl" href="if.xsl"?>
 <!-- Edited by XMLSpy® -->
+<!-- change href above to pick xslt file -->
 <catalog>
     <cd>
 		<title>Empire Burlesque</title>

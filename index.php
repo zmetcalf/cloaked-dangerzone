@@ -21,11 +21,11 @@ if(!isset($_SESSION['count'])) {
         <h1>Display Text</h1>
         <form action="session-test/session-test.php" method="post">
             <input type="text" name="zipcode">
-            <input type="submit" value="Fun Button" ><br>
-            <a href="session-test/session-test.php">Session Test</a><br>
-            <a href="XSLT/XPATH.html">XPath Test</a><br>
+            <input type="submit" value="Post-Submit Button" ><br />
+            <a href="session-test/session-test.php">Session Test</a><br />
+            <a href="XSLT/XPATH.html">XPath Test</a><br />
             <a href="XSLT/cdcatalog.xml">XSLT Test CD Catalog</a>
             <?php echo "The session count is " . $_SESSION['count']; ?>
-        </form
+        </form>
     </body>
 </html>
