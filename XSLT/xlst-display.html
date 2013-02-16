@@ -15,7 +15,7 @@
             
             function displayResult() {
                 xml=loadXMLDoc("cdcatalog.xml");
-                xsl=loadXMLDoc("cdcatalog.xsl");
+                xsl=loadXMLDoc("apply-templates.xsl");
                 // code for IE
                 if(window.ActiveXObject) {
                     ex=xml.transformNode(xsl);
