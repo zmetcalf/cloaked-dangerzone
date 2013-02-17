@@ -17,7 +17,14 @@ function updateFile($xml) {
 	$xmlDoc = new DOMDocument();
 	$xmlDoc->load($xml);
 
-	loadFile($xml, "tool_updated.xsl");
+	$xmlLoad = new simplexml_load_file($xml);	
+
+	//foreach($xmlLoad as $x) {
+		//echo $x['id'];
+		//$result = $xmlLoad->xpath($i);
+		
+	//}		
+	//loadFile($xml, "tool_updated.xsl");
 }
 
 if($_POST["btn_sub"] == "") {
