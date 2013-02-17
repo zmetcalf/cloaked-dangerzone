@@ -14,16 +14,18 @@ function loadFile($xml, $xsl) {
 }
 
 function updateFile($xml) {
+	
 	$xmlDoc = new DOMDocument();
 	$xmlDoc->load($xml);
-
-	$xmlLoad = new simplexml_load_file($xml);	
-
-	//foreach($xmlLoad as $x) {
-		//echo $x['id'];
-		//$result = $xmlLoad->xpath($i);
-		
-	//}		
+	echo "before load";
+	$xmlLoad = simplexml_load_file($xml);	
+	echo "after load " . $xmlLoad->getName();
+	foreach($xmlLoad->children() as $x) {
+		echo " " . $x->attributes() . " "; //prints the ID
+	}	
+	foreach($_POST as $i) {
+		echo " " . $i . " ";
+	}	
 	//loadFile($xml, "tool_updated.xsl");
 }
 
