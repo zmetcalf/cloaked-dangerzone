@@ -14,9 +14,6 @@ function loadFile($xml, $xsl) {
 }
 
 function updateFile($xml) {
-	
-	$xmlDoc = new DOMDocument();
-	$xmlDoc->load($xml);
 	$xmlLoad = simplexml_load_file($xml);
 	$postKeys = array_keys($_POST);
 	
