@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <tool>
 	<field id="prodName">
-		<value>It finally worked</value>
+		<value>Bass Master</value>
 	</field>
 	<field id="prodNo">
-		<value>1</value>
+		<value>123456</value>
 	</field>
 	<field id="price">
-		<value>Infinity!</value>
+		<value>$50.00</value>
 	</field>
 </tool>

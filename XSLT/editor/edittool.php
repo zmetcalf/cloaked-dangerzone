@@ -20,25 +20,16 @@ function updateFile($xml) {
 	$xmlLoad = simplexml_load_file($xml);
 	$postKeys = array_keys($_POST);
 	
-	echo "after load " . $xmlLoad->getName();
 	foreach($xmlLoad->children() as $x) {		
 		foreach($_POST as $key=>$value) {		
-			if($key == $x->attributes()) {	
-				echo " " . "Made it the loop" . " ";				
+			if($key == $x->attributes()) {					
 				$x->value = $value;
-				//$xmlLoad->children()->children() = $value;
-				//echo " 1 " . $x->attributes() . " 1 "; //prints the ID
 			}
 		}
 	}	
 	$xmlLoad->asXML($xml);
-/*	foreach($_POST as $key=>$value) {
-		echo " 2  " . "$key" . " 2 ";
-	}	*/ //I do not like this way
-	
-	/*foreach($postKeys as $i) {
-		echo " 3 " . $i . " 3 ";
-	}*/
+
+	loadFile($xml, "tool_updated.xsl");
 }
 
 if($_POST["btn_sub"] == "") {
@@ -47,5 +38,4 @@ if($_POST["btn_sub"] == "") {
 else {
 	updateFile("tool.xml");
 }
-
 ?>
