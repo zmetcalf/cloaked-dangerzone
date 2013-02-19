@@ -17,16 +17,28 @@ function updateFile($xml) {
 	
 	$xmlDoc = new DOMDocument();
 	$xmlDoc->load($xml);
-	echo "before load";
-	$xmlLoad = simplexml_load_file($xml);	
+	$xmlLoad = simplexml_load_file($xml);
+	$postKeys = array_keys($_POST);
+	
 	echo "after load " . $xmlLoad->getName();
-	foreach($xmlLoad->children() as $x) {
-		echo " " . $x->attributes() . " "; //prints the ID
+	foreach($xmlLoad->children() as $x) {		
+		foreach($_POST as $key=>$value) {		
+			if($key == $x->attributes()) {	
+				echo " " . "Made it the loop" . " ";				
+				$x->value = $value;
+				//$xmlLoad->children()->children() = $value;
+				//echo " 1 " . $x->attributes() . " 1 "; //prints the ID
+			}
+		}
 	}	
-	foreach($_POST as $i) {
-		echo " " . $i . " ";
-	}	
-	//loadFile($xml, "tool_updated.xsl");
+	$xmlLoad->asXML($xml);
+/*	foreach($_POST as $key=>$value) {
+		echo " 2  " . "$key" . " 2 ";
+	}	*/ //I do not like this way
+	
+	/*foreach($postKeys as $i) {
+		echo " 3 " . $i . " 3 ";
+	}*/
 }
 
 if($_POST["btn_sub"] == "") {
