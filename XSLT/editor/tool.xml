@@ -2,7 +2,7 @@
 <!--Not my code: http://www.w3schools.com/xsl/tool.xml -->
 <tool>
 	<field id="prodName">
-		<value>Bass Master</value>
+		<value>Main Product</value>
 	</field>
 	<field id="prodNo">
 		<value>123456</value>

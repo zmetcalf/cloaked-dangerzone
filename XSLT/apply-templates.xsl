@@ -1,8 +1,7 @@
-<!--Not my code: http://www.w3schools.com/xsl/xsl_apply_templates.asp -->
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
+<!--Not my code: http://www.w3schools.com/xsl/xsl_apply_templates.asp -->
 <xsl:template match="/">
     <html>
         <body>
