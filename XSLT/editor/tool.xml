@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Not my code: http://www.w3schools.com/xsl/tool.xml -->
 <tool>
 	<field id="prodName">
 		<value>Bass Master</value>

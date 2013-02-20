@@ -2,6 +2,7 @@
 <!-- <?xml-stylesheet type="text/xsl" href="if.xsl"?> -->
 <!-- Edited by XMLSpyÂ® -->
 <!-- change href above to pick xslt file -->
+<!--Not my code - http://www.w3schools.com/xsl/cdcatalog.xml -->
 <catalog>
     <cd>
 		<title>Empire Burlesque</title>

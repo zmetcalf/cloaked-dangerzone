@@ -1,5 +1,5 @@
 <?php
-
+//Modified ASP code to PHP at http://www.w3schools.com/xsl/xsl_editxml.asp 
 function loadFile($xml, $xsl) {
 	$xmlDoc = new DOMDocument();
 	$xmlDoc->load($xml);
