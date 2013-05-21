@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="exam1-1.xsl"?>
+<book>
+	<intro></intro>
+		<chapter>
+			<section>
+				<topic source="song">Xanadu</topic>
+				<topic>Topic 2</topic>
+			</section>
+		</chapter>
+</book>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="exam1-4.xsl"?>
+<year>
+	<planting>
+		<season period="spring">
+			<month>March</month>
+			<month>April</month>
+			<month>May</month>
+		</season>
+		<season period="summer">
+			<month>June</month>
+			<month>July</month>
+			<month>August</month>
+		</season>
+	</planting>
+	<harvest>
+		<season period="fall">
+			<month>September</month>
+			<month>October</month>
+			<month>November</month>
+		</season>
+		<season period="winter">
+			<month>December</month>
+			<month>January</month>
+			<month>February</month>
+		</season>
+	</harvest>
+</year>
