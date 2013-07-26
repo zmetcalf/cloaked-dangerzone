@@ -1,14 +1,14 @@
 $(document).ready(function(){
     $( "#date" ).datepicker();
-    
-    function runEffect() {
-      var selectedEffect = $( "blind" ).val();
 
-      $( "#effect" ).toggle( selectedEffect, "linear",  500);
-    };
+    function runEffect() {
+        var options = {easing:"easeInOutQuad"};
+        
+        $( "#effect" ).toggle( "blind", options,  500);
+    }
     
-    $( "#comment-count" ).click(function() {
-      runEffect();
-      return false;
+    $( ".comment-count a" ).click(function() {
+        runEffect();
+        return false;
     });
 });
