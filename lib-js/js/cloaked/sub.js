@@ -1,4 +1,9 @@
-define({
-    spot: "red",
-    size: "zit"
+define(function ()  {
+    
+    var redspot = "red";
+    
+    return {
+        spot: redspot,
+        size: "zit"
+    }
 });
