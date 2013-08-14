@@ -14,19 +14,27 @@ requirejs.config({
 });
     
 requirejs([
-        'jquery', 
+        'jquery',
+        'backbone',
         'cloaked/sub', 
         'cloaked/backbonetutorial/model',
         'cloaked/backbonetutorial/modelrest',
-        'cloaked/backbonetutorial/validate'
+        'cloaked/backbonetutorial/validate',
+        'cloaked/backbonetutorial/view',
+        'cloaked/backbonetutorial/approuter',
+        'cloaked/backbonetutorial/collection'
     ],
 
     function (
             $,
+            Backbone,
             sub,
             model,
             modelrest,
-            validate
+            validate,
+            view,
+            approuter,
+            collection
         )   
     {
         
