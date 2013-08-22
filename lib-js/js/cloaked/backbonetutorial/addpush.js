@@ -11,4 +11,6 @@ define(['backbone'], function(Backbone) {
     );
     ships.push({name: "Super Ship"}, {at: 0});
     ships.push({name: "Slow Ship"});
+    ships.add({name: "Any Ship"});
+    ships.add([{name: "Ship 1"}, {name: "Ship 2"}]);
 });
