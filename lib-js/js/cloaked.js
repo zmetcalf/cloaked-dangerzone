@@ -22,7 +22,8 @@ requirejs([
         'cloaked/backbonetutorial/validate',
         'cloaked/backbonetutorial/view',
         'cloaked/backbonetutorial/approuter',
-        'cloaked/backbonetutorial/collection'
+        'cloaked/backbonetutorial/collection',
+        'cloaked/backbonetutorial/addpush'
     ],
 
     function (
@@ -34,7 +35,8 @@ requirejs([
             validate,
             view,
             approuter,
-            collection
+            collection,
+            addpush
         )   
     {
         

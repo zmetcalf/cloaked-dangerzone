@@ -19,4 +19,4 @@ define(['backbone'], function(Backbone) {
             alert(user.toJSON());
         }
     })*/ //Needs server to work
-})
+});
