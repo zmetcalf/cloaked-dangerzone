@@ -5,16 +5,16 @@ define(["backbone"], function(Backbone) {
             "*actions": "defaultRoute"
         }
     });
-    
+
     var app_router = new AppRouter;
-    
+
     app_router.on('route:defaultRoute', function(id) {
-        alert( "Get post number " + id );
+        console.log( "Get post number " + id );
     })
     app_router.on('route:defaultRoute', function(actions) {
-        alert( actions );
+        console.log( actions );
     })
-    
+
     Backbone.history.start();
-    
+
 })

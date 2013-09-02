@@ -1,5 +1,5 @@
 define(["backbone"], function(Backbone) {
-    
+
     SearchView = Backbone.View.extend({
         initialize: function() {
             this.render();
@@ -13,9 +13,9 @@ define(["backbone"], function(Backbone) {
             "click input[type=button]": "doSearch"
         },
         doSearch: function( event ) {
-            alert( "Search for " + $("#search_input").val() );
+            console.log( "Search for " + $("#search_input").val() );
         }
     });
-    
+
     var search_view = new SearchView({ el: $("#search_container")});
 })
