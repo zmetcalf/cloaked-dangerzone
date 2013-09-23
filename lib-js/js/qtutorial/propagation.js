@@ -9,11 +9,28 @@ define(['q'], function(Q) {
     console.log("Hello World!");
   });
 
-  var outputPromise = getInputPromise()
+  function delay(ms) {
+    var deferred = Q.defer();
+    setTimeout(deferred.resolve, ms);
+    return deferred.promise;
+  }
+
+  console.log(delay(1000));
+  var cookTime = delay(1000)
+    .then(function() {
+      console.log("Now we're cooking");
+    })
+    .then(function() {
+      console.log("Now we're dealing");
+    })
+    .fail(function() {
+      console.log("It's over");
+    });
+
+  /*var outputPromise = getInputPromise()
     .then(function(input) {
       console.log(input);
     }, function (reason) {
       console.log(reason);
-    });
-
+    });*/
 });
