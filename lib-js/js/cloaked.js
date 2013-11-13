@@ -9,15 +9,16 @@ requirejs.config({
     },
 
     paths: {
-        cloaked: '../cloaked'
+        cloaked: '../cloaked',
+        bootstrap: '/cloaked-dangerzone/bootstrap/js/bootstrap'
     }
 });
 
 requirejs([
         'jquery',
-        'backbone',
         'cloaked/sub',
         'cloaked/backbonetutorial/model',
+        'cloaked/backbonetutorial/require-root-test',
         'cloaked/backbonetutorial/modelrest',
         'cloaked/backbonetutorial/validate',
         'cloaked/backbonetutorial/view',
@@ -29,16 +30,7 @@ requirejs([
 
     function (
             $,
-            Backbone,
-            sub,
-            model,
-            modelrest,
-            validate,
-            view,
-            approuter,
-            collection,
-            addpush,
-            prototypeEx
+            sub
         )
     {
 
@@ -47,5 +39,4 @@ requirejs([
                 $(this).text(sub.spot);
             });
         });
-
 })
